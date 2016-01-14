@@ -32,12 +32,6 @@ namespace MarkDownApplication.GUI
             this.Text = "";
         }
 
-        public override void Clear()
-        {
-            base.Clear();
-            Saved = false;
-        }
-
         private Boolean saved;
 
         public Boolean Saved

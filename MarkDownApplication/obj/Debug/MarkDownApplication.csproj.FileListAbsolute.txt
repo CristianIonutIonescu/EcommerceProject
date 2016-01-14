@@ -16,3 +16,11 @@ D:\Visual studio 2013 projects\EcommerceProject\MarkDownApplication\obj\Debug\In
 D:\Visual studio 2013 projects\EcommerceProject\MarkDownApplication\obj\Debug\MarkDownApplication.csproj.ResolveComReference.cache
 D:\Visual studio 2013 projects\EcommerceProject\MarkDownApplication\obj\Debug\MarkDownApplication.exe
 D:\Visual studio 2013 projects\EcommerceProject\MarkDownApplication\obj\Debug\MarkDownApplication.pdb
+D:\Visual studio 2013 projects\EcommerceProject\MarkDownApplication\obj\Debug\MarkDownApplication.csprojResolveAssemblyReference.cache
+D:\Visual studio 2013 projects\EcommerceProject\MarkDownApplication\obj\Debug\MarkDownApplication.MainWindow.resources
+D:\Visual studio 2013 projects\EcommerceProject\MarkDownApplication\obj\Debug\MarkDownApplication.Properties.Resources.resources
+D:\Visual studio 2013 projects\EcommerceProject\MarkDownApplication\obj\Debug\MarkDownApplication.csproj.GenerateResource.Cache
+D:\Visual studio 2013 projects\EcommerceProject\MarkDownApplication\bin\Debug\MarkDownApplication.exe
+D:\Visual studio 2013 projects\EcommerceProject\MarkDownApplication\bin\Debug\MarkDownApplication.pdb
+D:\Visual studio 2013 projects\EcommerceProject\MarkDownApplication\bin\Debug\itextsharp.dll
+D:\Visual studio 2013 projects\EcommerceProject\MarkDownApplication\bin\Debug\itextsharp.xml
