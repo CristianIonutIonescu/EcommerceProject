@@ -81,6 +81,19 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+            this.MainContainer.FileToolStripMenuItem.NewToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);		
+            this.MainContainer.FileToolStripMenuItem.OpenToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);		
+            this.MainContainer.FileToolStripMenuItem.SaveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);		
+            this.MainContainer.FileToolStripMenuItem.SaveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);		
+            this.MainContainer.FileToolStripMenuItem.ExitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);		
+		
+            this.MainContainer.EditToolStripMenuItem.UndoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);		
+            this.MainContainer.EditToolStripMenuItem.RedoToolStripMenuItem.Click += new System.EventHandler(this.redoToolStripMenuItem_Click);		
+            this.MainContainer.EditToolStripMenuItem.CopyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);		
+            this.MainContainer.EditToolStripMenuItem.CutToolStripMenuItem.Click += new System.EventHandler(this.cutToolStripMenuItem_Click);		
+            this.MainContainer.EditToolStripMenuItem.PasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);		
+            this.MainContainer.EditToolStripMenuItem.SelectAllToolStripMenuItem.Click += new System.EventHandler(this.selectAllToolStripMenuItem_Click);		
+
         }
 
         #endregion
