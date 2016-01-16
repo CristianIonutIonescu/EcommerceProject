@@ -62,6 +62,9 @@
     <Compile Include="GUI\MarkdownToolStripMenuItem.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="GUI\TextProperties.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="MainWindowForm.cs">
       <SubType>Form</SubType>
     </Compile>
