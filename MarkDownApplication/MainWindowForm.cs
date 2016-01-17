@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MarkdownSharp;
 
 namespace MarkDownApplication
 {
@@ -49,7 +50,7 @@ namespace MarkDownApplication
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            this.saveFile(true);
         }
 
         private void undoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -83,7 +84,6 @@ namespace MarkDownApplication
         }
 
 
-
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.TextArea.Clear();
@@ -91,31 +91,42 @@ namespace MarkDownApplication
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.saveFile();
+            this.saveFile(false);
         }
 
-        private void saveFile()
+        private void saveFile(Boolean cameFromSave)
         {
-            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.DefaultExt = "*.txt";
-            saveFileDialog1.Filter = "Text File|*.txt|Markdown |*.md|HTML|*.html";
-            saveFileDialog1.Title = "Save File";
-            saveFileDialog1.ShowDialog();
-
-            // If the file name is not an empty string open it for saving.
-            if (saveFileDialog1.FileName.Length > 0)
+            if (!cameFromSave || !this.TextArea.Saved)
             {
-                // Save the contents of the RichTextBox into the file.
-                string extension = Path.GetExtension(saveFileDialog1.FileName);
-                if(extension == "html")
+                SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+                saveFileDialog1.DefaultExt = "*.txt";
+                saveFileDialog1.Filter = "Text File|*.txt|Markdown |*.md|HTML|*.html";
+                saveFileDialog1.Title = "Save File";
+                saveFileDialog1.ShowDialog();
+
+                // If the file name is not an empty string open it for saving.
+                if (saveFileDialog1.FileName.Length > 0)
                 {
-                    
+                    // Save the contents of the RichTextBox into the file.
+                    string extension = Path.GetExtension(saveFileDialog1.FileName);
+                    if (extension == ".html" || extension == "html")
+                    {
+                        Markdown compiler = new Markdown(true);
+
+                        string output = compiler.Transform(this.TextArea.Text);
+                        System.IO.File.WriteAllText(@"" + saveFileDialog1.FileName, output);
+                    }
+                    else
+                    {
+                        System.IO.File.WriteAllText(@"" + saveFileDialog1.FileName, this.TextArea.Text);
+                        this.TextArea.Saved = true;
+                        this.TextArea.FileName = saveFileDialog1.FileName;
+                    }
                 }
-                else
-                {
-                    System.IO.File.WriteAllText(@"" + saveFileDialog1.FileName, this.TextArea.Text);
-                }
-                
+            }
+            else
+            {
+                System.IO.File.WriteAllText(@"" + this.TextArea.FileName, this.TextArea.Text);
             }
         }
 

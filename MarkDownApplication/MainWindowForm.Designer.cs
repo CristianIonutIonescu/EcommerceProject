@@ -31,28 +31,35 @@
             this.components = new System.ComponentModel.Container();
             this.TextArea = new MarkDownApplication.GUI.MarkDownTextEditor();
             this.TextProperties = new MarkDownApplication.GUI.TextProperties(this.components);
-
             this.MainContainer = new MarkDownApplication.GUI.MarkdownMenuStrip();
-            this.TextProperties.SuspendLayout();
             this.SuspendLayout();
             // 
             // TextArea
             // 
             this.TextArea.AcceptsTab = true;
-            this.TextArea.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.TextArea.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TextArea.AutoWordSelection = true;
             this.TextArea.BackColor = System.Drawing.Color.LightGray;
             this.TextArea.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextArea.ContextMenuStrip = this.TextProperties;
             this.TextArea.EnableAutoDragDrop = true;
+            this.TextArea.FileName = null;
             this.TextArea.Location = new System.Drawing.Point(27, 28);
             this.TextArea.Name = "TextArea";
             this.TextArea.Saved = false;
             this.TextArea.Size = new System.Drawing.Size(909, 461);
             this.TextArea.TabIndex = 4;
             this.TextArea.Text = "";
-            
+            // 
+            // TextProperties
+            // 
+            this.TextProperties.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.TextProperties.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.TextProperties.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.TextProperties.Name = "TextProperties";
+            this.TextProperties.Size = new System.Drawing.Size(104, 192);
             // 
             // MainContainer
             // 
@@ -61,7 +68,7 @@
             this.MainContainer.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.MainContainer.Location = new System.Drawing.Point(0, 0);
             this.MainContainer.Name = "MainContainer";
-            this.MainContainer.Size = new System.Drawing.Size(102, 25);
+            this.MainContainer.Size = new System.Drawing.Size(54, 25);
             this.MainContainer.TabIndex = 1;
             this.MainContainer.Text = "menuStrip1";
             // 
@@ -77,23 +84,14 @@
             this.MainMenuStrip = this.MainContainer;
             this.Name = "MainWindow";
             this.Text = "MarkDown";
-            this.TextProperties.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
-            this.MainContainer.FileToolStripMenuItem.NewToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);		
-            this.MainContainer.FileToolStripMenuItem.OpenToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);		
-            this.MainContainer.FileToolStripMenuItem.SaveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);		
-            this.MainContainer.FileToolStripMenuItem.SaveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);		
-            this.MainContainer.FileToolStripMenuItem.ExitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);		
-		
-            this.MainContainer.EditToolStripMenuItem.UndoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);		
-            this.MainContainer.EditToolStripMenuItem.RedoToolStripMenuItem.Click += new System.EventHandler(this.redoToolStripMenuItem_Click);		
-            this.MainContainer.EditToolStripMenuItem.CopyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);		
-            this.MainContainer.EditToolStripMenuItem.CutToolStripMenuItem.Click += new System.EventHandler(this.cutToolStripMenuItem_Click);		
-            this.MainContainer.EditToolStripMenuItem.PasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);		
-            this.MainContainer.EditToolStripMenuItem.SelectAllToolStripMenuItem.Click += new System.EventHandler(this.selectAllToolStripMenuItem_Click);		
-
+            this.MainContainer.FileToolStripMenuItem.NewToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
+            this.MainContainer.FileToolStripMenuItem.OpenToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
+            this.MainContainer.FileToolStripMenuItem.SaveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
+            this.MainContainer.FileToolStripMenuItem.SaveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
+            this.MainContainer.FileToolStripMenuItem.ExitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
         }
 
         #endregion

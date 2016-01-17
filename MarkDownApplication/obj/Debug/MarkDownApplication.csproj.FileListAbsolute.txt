@@ -22,3 +22,5 @@ D:\Visual studio 2013 projects\EcommerceProject\MarkDownApplication\obj\Debug\Ma
 D:\Visual studio 2013 projects\EcommerceProject\MarkDownApplication\bin\Debug\MarkDownApplication.exe
 D:\Visual studio 2013 projects\EcommerceProject\MarkDownApplication\bin\Debug\MarkDownApplication.pdb
 D:\Visual studio 2013 projects\EcommerceProject\MarkDownApplication\obj\Debug\MarkDownApplication.csprojResolveAssemblyReference.cache
+D:\Visual studio 2013 projects\EcommerceProject\MarkDownApplication\bin\Debug\MarkdownSharp.dll
+D:\Visual studio 2013 projects\EcommerceProject\MarkDownApplication\bin\Debug\MarkdownSharp.pdb

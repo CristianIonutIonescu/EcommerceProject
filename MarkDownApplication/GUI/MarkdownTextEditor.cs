@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MarkdownSharp;
 
 namespace MarkDownApplication.GUI
 {
@@ -39,6 +40,15 @@ namespace MarkDownApplication.GUI
             get { return saved; }
             set { saved = value; }
         }
+
+        private string fileName;
+
+        public string FileName
+        {
+            get { return fileName; }
+            set { fileName = value; }
+        }
+        
         
     }
 }

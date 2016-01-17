@@ -16,14 +16,12 @@ namespace MarkDownApplication.GUI
         private void InitializeComponents()
         {
             fileToolStripMenuItem = new FileToolStripMenuItem();
-            editToolStripMenuItem = new EditToolStripMenuItem();
 
             this.BackColor = System.Drawing.Color.Transparent;
             this.Dock = System.Windows.Forms.DockStyle.None;
             this.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.editToolStripMenuItem});
+            this.fileToolStripMenuItem});
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "MainContainer";
             this.Size = new System.Drawing.Size(102, 25);
@@ -38,14 +36,6 @@ namespace MarkDownApplication.GUI
         {
             get { return fileToolStripMenuItem; }
             set { fileToolStripMenuItem = value; }
-        }
-
-        private EditToolStripMenuItem editToolStripMenuItem;
-
-        public EditToolStripMenuItem EditToolStripMenuItem
-        {
-            get { return editToolStripMenuItem; }
-            set { editToolStripMenuItem = value; }
         }
     }
 }
