@@ -24,3 +24,8 @@ D:\Visual studio 2013 projects\EcommerceProject\MarkDownApplication\bin\Debug\Ma
 D:\Visual studio 2013 projects\EcommerceProject\MarkDownApplication\obj\Debug\MarkDownApplication.csprojResolveAssemblyReference.cache
 D:\Visual studio 2013 projects\EcommerceProject\MarkDownApplication\bin\Debug\MarkdownSharp.dll
 D:\Visual studio 2013 projects\EcommerceProject\MarkDownApplication\bin\Debug\MarkdownSharp.pdb
+D:\Visual studio 2013 projects\EcommerceProject\MarkDownApplication\bin\Debug\MarkDownApplication.exe.manifest
+D:\Visual studio 2013 projects\EcommerceProject\MarkDownApplication\bin\Debug\MarkDownApplication.application
+D:\Visual studio 2013 projects\EcommerceProject\MarkDownApplication\obj\Debug\MarkDownApplication.TrustInfo.xml
+D:\Visual studio 2013 projects\EcommerceProject\MarkDownApplication\obj\Debug\MarkDownApplication.exe.manifest
+D:\Visual studio 2013 projects\EcommerceProject\MarkDownApplication\obj\Debug\MarkDownApplication.application

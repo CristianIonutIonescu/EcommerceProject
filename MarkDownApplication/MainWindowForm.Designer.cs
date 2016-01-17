@@ -41,11 +41,13 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TextArea.AutoWordSelection = true;
-            this.TextArea.BackColor = System.Drawing.Color.LightGray;
+            this.TextArea.BackColor = System.Drawing.Color.WhiteSmoke;
             this.TextArea.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextArea.ContextMenuStrip = this.TextProperties;
+            this.TextArea.CurrentTextOptions = null;
             this.TextArea.EnableAutoDragDrop = true;
             this.TextArea.FileName = null;
+            this.TextArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextArea.Location = new System.Drawing.Point(27, 28);
             this.TextArea.Name = "TextArea";
             this.TextArea.Saved = false;
@@ -66,9 +68,9 @@
             this.MainContainer.BackColor = System.Drawing.Color.Transparent;
             this.MainContainer.Dock = System.Windows.Forms.DockStyle.None;
             this.MainContainer.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.MainContainer.Location = new System.Drawing.Point(0, 0);
+            this.MainContainer.Location = new System.Drawing.Point(0, -3);
             this.MainContainer.Name = "MainContainer";
-            this.MainContainer.Size = new System.Drawing.Size(54, 25);
+            this.MainContainer.Size = new System.Drawing.Size(169, 28);
             this.MainContainer.TabIndex = 1;
             this.MainContainer.Text = "menuStrip1";
             // 
@@ -76,11 +78,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(962, 540);
             this.Controls.Add(this.MainContainer);
             this.Controls.Add(this.TextArea);
-            this.ForeColor = System.Drawing.Color.LightGray;
+            this.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.MainMenuStrip = this.MainContainer;
             this.Name = "MainWindow";
             this.Text = "MarkDown";
