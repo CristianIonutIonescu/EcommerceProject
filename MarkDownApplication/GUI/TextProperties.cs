@@ -65,41 +65,61 @@ namespace MarkDownApplication.GUI
             this.Header1.Name = "Header1";
             this.Header1.Size = new System.Drawing.Size(103, 26);
             this.Header1.Text = "Header1";
+            this.Header1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D1)));
             // 
             // Header2
             // 
+            this.Header2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Header2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Header2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.Header2.ImageTransparentColor = System.Drawing.Color.Transparent;
             this.Header2.Name = "Header2";
             this.Header2.Size = new System.Drawing.Size(103, 26);
             this.Header2.Text = "Header2";
+            this.Header2.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D2)));
             // 
             // Header3
             // 
+            this.Header3.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Header3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Header3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.Header3.ImageTransparentColor = System.Drawing.Color.Transparent;
             this.Header3.Name = "Header3";
             this.Header3.Size = new System.Drawing.Size(103, 26);
             this.Header3.Text = "Header3";
+            this.Header3.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D3)));
             // 
             // toolStripSeparator1
             // 
+            this.toolStripSeparator1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.toolStripSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.toolStripSeparator1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(100, 6);
             // 
             // Bold
             // 
+            this.Bold.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Bold.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Bold.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.Bold.ImageTransparentColor = System.Drawing.Color.Transparent;
             this.Bold.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.Bold.Name = "Bold";
             this.Bold.Size = new System.Drawing.Size(103, 26);
             this.Bold.Text = "Bold";
+            this.Bold.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.B)));
             // 
             // Italic
             // 
+            this.Italic.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Italic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Italic.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.Italic.ImageTransparentColor = System.Drawing.Color.Transparent;
             this.Italic.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
             this.Italic.Name = "Italic";
             this.Italic.Size = new System.Drawing.Size(103, 26);
             this.Italic.Text = "Italic";
+            this.Italic.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.I)));
         }
 
         #endregion
