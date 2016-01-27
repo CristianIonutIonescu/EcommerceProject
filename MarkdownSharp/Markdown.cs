@@ -248,7 +248,6 @@ namespace MarkdownSharp
 
         /// <summary>
         /// current version of MarkdownSharp;  
-        /// see http://code.google.com/p/markdownsharp/ for the latest code or to contribute
         /// </summary>
         public string Version
         {
