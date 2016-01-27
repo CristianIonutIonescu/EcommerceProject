@@ -6,13 +6,24 @@ using System.Threading.Tasks;
 
 namespace MarkDownApplication.GUI
 {
+    //<summary>
+    //MarkdownMenuStrip
+    //Container for ToolStripMenuItems
+    //</summary>
     class MarkdownMenuStrip : System.Windows.Forms.MenuStrip
     {
+        //Constructor
         public MarkdownMenuStrip()
         {
             InitializeComponents();
         }
 
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
         private void InitializeComponents()
         {
             fileToolStripMenuItem = new FileToolStripMenuItem();
@@ -29,6 +40,7 @@ namespace MarkDownApplication.GUI
             this.Text = "menuStrip1";
         }
 
+        #endregion
 
         private FileToolStripMenuItem fileToolStripMenuItem;
 

@@ -44,7 +44,6 @@
             this.TextArea.BackColor = System.Drawing.Color.WhiteSmoke;
             this.TextArea.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextArea.ContextMenuStrip = this.TextProperties;
-            this.TextArea.CurrentTextOptions = null;
             this.TextArea.EnableAutoDragDrop = true;
             this.TextArea.FileName = null;
             this.TextArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -94,6 +93,11 @@
             this.MainContainer.FileToolStripMenuItem.SaveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             this.MainContainer.FileToolStripMenuItem.SaveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             this.MainContainer.FileToolStripMenuItem.ExitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            this.TextProperties.Header1.Click += new System.EventHandler(this.Headings1ToolStripMenuItem_Click);
+            this.TextProperties.Header2.Click += new System.EventHandler(this.Headings2ToolStripMenuItem_Click);
+            this.TextProperties.Header3.Click += new System.EventHandler(this.Headings3ToolStripMenuItem_Click);
+            this.TextProperties.Bold.Click += new System.EventHandler(this.BoldToolStripMenuItem_Click);
+            this.TextProperties.Italic.Click += new System.EventHandler(this.ItalicToolStripMenuItem_Click);
         }
 
         #endregion

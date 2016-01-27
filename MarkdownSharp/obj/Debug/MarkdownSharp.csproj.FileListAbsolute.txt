@@ -7,3 +7,4 @@ D:\Visual studio 2013 projects\EcommerceProject\MarkdownSharp\obj\Debug\Markdown
 D:\Visual studio 2013 projects\EcommerceProject\MarkdownSharp\obj\Debug\MarkdownSharp.pdb
 D:\Visual studio 2013 projects\EcommerceProject\MarkdownSharp\bin\Debug\MarkdownSharp.dll
 D:\Visual studio 2013 projects\EcommerceProject\MarkdownSharp\bin\Debug\MarkdownSharp.pdb
+D:\Visual studio 2013 projects\EcommerceProject\MarkdownSharp\obj\Debug\MarkdownSharp.csprojResolveAssemblyReference.cache

@@ -94,9 +94,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GUI\EditToolStripMenuItem.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="GUI\FileToolStripMenuItem.cs">
       <SubType>Component</SubType>
     </Compile>

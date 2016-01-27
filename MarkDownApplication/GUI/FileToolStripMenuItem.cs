@@ -6,13 +6,29 @@ using System.Threading.Tasks;
 
 namespace MarkDownApplication.GUI
 {
+    // <summary>
+    // Name FileTooStripMenuItem
+    // Class which contains application properties:
+    // New
+    // Save
+    // Save as
+    // Open
+    // Exit
+    // <summary>
     class FileToolStripMenuItem : MarkdownToolStripMenuItem
     {
+        //Constructor
         public FileToolStripMenuItem()
         {
             this.InitializeComponent();
         }
 
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
         private void InitializeComponent()
         {
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -82,6 +98,7 @@ namespace MarkDownApplication.GUI
             this.exitToolStripMenuItem.Text = "E&xit";
         }
 
+        #endregion
 
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
 
