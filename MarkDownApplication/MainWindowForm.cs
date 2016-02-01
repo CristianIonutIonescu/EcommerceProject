@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MarkdownSharp;
+using SelectPdf;
+
 
 namespace MarkDownApplication
 {
@@ -93,7 +95,7 @@ namespace MarkDownApplication
             {
                 SaveFileDialog saveFileDialog1 = new SaveFileDialog();
                 saveFileDialog1.DefaultExt = "*.txt";
-                saveFileDialog1.Filter = "Markdown |*.md|HTML|*.html|Text File|*.txt";
+                saveFileDialog1.Filter = "Markdown |*.md|HTML |*.html|PDF |*.pdf|Text File |*.txt";
                 saveFileDialog1.Title = "Save File";
                 saveFileDialog1.ShowDialog();
 
@@ -111,12 +113,28 @@ namespace MarkDownApplication
                         string output = compiler.Transform(this.TextArea.Text);
                         System.IO.File.WriteAllText(@"" + saveFileDialog1.FileName, output);
                     }
+                    else if(extension == ".pdf" || extension == "pdf")
+                    {
+                        Markdown compiler = new Markdown(true);
+                        string output = compiler.Transform(this.TextArea.Text);
+                        PdfWrite(output, saveFileDialog1.FileName);
+                    }
                     // else save the file in the desired format - .md or .txt
                     else
                     {
                         System.IO.File.WriteAllText(@"" + saveFileDialog1.FileName, this.TextArea.Text);
                         this.TextArea.Saved = true;
                         this.TextArea.FileName = saveFileDialog1.FileName;
+                    }
+
+                    if(extension != ".md")
+                    {
+                        System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo()
+                        {
+                            FileName = saveFileDialog1.FileName,
+                            UseShellExecute = true,
+                            Verb = "open"
+                        });
                     }
                 }
             }
@@ -179,6 +197,22 @@ namespace MarkDownApplication
         private void ItalicToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.TextArea.HandleBoldAndItalic(MarkDownApplication.GUI.TextOptions.Italic);
+        }
+
+        private void PdfWrite(string HtmlStream, string FileName)
+        {
+            // instantiate the html to pdf converter 
+            HtmlToPdf converter = new HtmlToPdf();
+            SelectPdf.GlobalProperties.HtmlEngineFullPath = "D:\\Visual studio 2013 projects\\EcommerceProject\\MarkDownApplication\\Dependicies\\Select.Html.dep";
+
+            // convert the url to pdf 
+            PdfDocument doc = converter.ConvertHtmlString(HtmlStream);
+
+            // save pdf document 
+            doc.Save(FileName);
+
+            // close pdf document 
+            doc.Close();
         }
 
         #endregion

@@ -79,8 +79,8 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="itextsharp">
-      <HintPath>.\itextsharp.dll</HintPath>
+    <Reference Include="Select.HtmlToPdf">
+      <HintPath>Dependicies\Select.HtmlToPdf.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

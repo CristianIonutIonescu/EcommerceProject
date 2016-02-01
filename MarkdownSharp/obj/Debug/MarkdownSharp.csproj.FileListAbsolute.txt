@@ -3,8 +3,7 @@ C:\Users\Cristian\Desktop\markdownsharp-20100703-v113\MarkdownSharp\bin\Debug\Ma
 C:\Users\Cristian\Desktop\markdownsharp-20100703-v113\MarkdownSharp\obj\Debug\MarkdownSharp.csprojResolveAssemblyReference.cache
 C:\Users\Cristian\Desktop\markdownsharp-20100703-v113\MarkdownSharp\obj\Debug\MarkdownSharp.dll
 C:\Users\Cristian\Desktop\markdownsharp-20100703-v113\MarkdownSharp\obj\Debug\MarkdownSharp.pdb
-D:\Visual studio 2013 projects\EcommerceProject\MarkdownSharp\obj\Debug\MarkdownSharp.dll
-D:\Visual studio 2013 projects\EcommerceProject\MarkdownSharp\obj\Debug\MarkdownSharp.pdb
 D:\Visual studio 2013 projects\EcommerceProject\MarkdownSharp\bin\Debug\MarkdownSharp.dll
 D:\Visual studio 2013 projects\EcommerceProject\MarkdownSharp\bin\Debug\MarkdownSharp.pdb
-D:\Visual studio 2013 projects\EcommerceProject\MarkdownSharp\obj\Debug\MarkdownSharp.csprojResolveAssemblyReference.cache
+D:\Visual studio 2013 projects\EcommerceProject\MarkdownSharp\obj\Debug\MarkdownSharp.dll
+D:\Visual studio 2013 projects\EcommerceProject\MarkdownSharp\obj\Debug\MarkdownSharp.pdb
